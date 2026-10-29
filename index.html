@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>넥스트코딩 아카데미 (NextCoding Academy) | 대한민국 No.1 실무 IT 교육</title>
+  <meta name="description" content="20년 실무 노하우 기반의 차세대 IT 교육 기업. 프론트엔드, 백엔드, AI·데이터, 클라우드 DevOps까지 1:1 현업 멘토링과 실전 프로젝트 중심의 몰입형 교육.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="site-header" id="header">
+    <div class="nav-container">
+      <a href="#" class="brand-logo">
+        <div class="logo-mark">
+          <span class="logo-gradient">NC</span>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">NEXTCODING</span>
+          <span class="logo-subtitle">ACADEMY</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#about" class="nav-link">소개</a>
+        <a href="#curriculum" class="nav-link">부트캠프 트랙</a>
+        <a href="#features" class="nav-link">차별점</a>
+        <a href="#reviews" class="nav-link">수강생 후기</a>
+        <a href="#tuition" class="nav-link">수강 혜택</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#consulting" class="btn btn-sm btn-primary">1:1 상담신청</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="메뉴 열기">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="hero-bg-glow glow-1"></div>
+    <div class="hero-bg-glow glow-2"></div>
+    <div class="hero-grid-pattern"></div>
+    
+    <div class="container hero-container">
+      <!-- 수강생 화이팅 & 부트캠프 응원 배너 -->
+      <div class="hero-cheering-wrapper">
+        <div class="cheering-avatar-box">
+          <img src="assets/student_cheering.jpg" alt="화이팅하는 수강생" class="cheering-avatar-img">
+          <div class="cheering-fist-badge">🔥 화이팅!</div>
+        </div>
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span>2026 하반기 정규 14기 사전 모집 중 (얼리버드 30% 지원)</span>
+        </div>
+      </div>
+      
+      <h1 class="hero-title">
+        단순 코더가 아닌,<br>
+        <span class="highlight-text">문제를 설계하고 해결하는 엔지니어</span>로 성장하세요.
+      </h1>
+
+      <p class="hero-description">
+        20년 경력의 테크 리드와 현업 빅테크 멘토진이 직접 설계한 실전 집중 커리큘럼.<br>
+        실무 아키텍처부터 AI 에이전트 협업 개발까지, 시장이 갈망하는 0.1% IT 인재로 도약하세요.
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="#curriculum" class="btn btn-lg btn-primary pulse-btn">
+          부트캠프 과정 살펴보기
+          <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#consulting" class="btn btn-lg btn-outline">
+          무료 커리어 진단 받기
+        </a>
+      </div>
+
+      <!-- Trust Badges & Metrics -->
+      <div class="hero-metrics">
+        <div class="metric-card">
+          <span class="metric-num" data-target="96.8">0</span><span class="metric-unit">%</span>
+          <span class="metric-label">수료생 6개월 내 취업률</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-num" data-target="4850">0</span><span class="metric-unit">만원</span>
+          <span class="metric-label">신입 초봉 평균치</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-num" data-target="100">0</span><span class="metric-unit">%</span>
+          <span class="metric-label">국비지원 / 기업 연계</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-num" data-target="248">0</span><span class="metric-unit">+</span>
+          <span class="metric-label">협약 IT 패밀리 기업</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partner Logos Banner -->
+  <section class="partners-bar">
+    <div class="container">
+      <p class="partners-title">넥스트코딩 수료생들이 활약 중인 테크 기업</p>
+      <div class="partners-logos">
+        <div class="partner-item">NAVER Cloud</div>
+        <div class="partner-item">Kakao Corp</div>
+        <div class="partner-item">Line Plus</div>
+        <div class="partner-item">Coupang</div>
+        <div class="partner-item">Baemin (우아한형제들)</div>
+        <div class="partner-item">Toss (비바리퍼블리카)</div>
+        <div class="partner-item">SK C&C</div>
+        <div class="partner-item">Dunamu</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Philosophy Section -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="section-badge">ABOUT NEXTCODING</div>
+      <h2 class="section-title">왜 넥스트코딩을 선택해야 할까요?</h2>
+      <p class="section-subtitle">20년간 변화무쌍한 테크 생태계를 경험하며 확립한 확실한 실전 교육 철학</p>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="card-icon">🧠</div>
+          <h3>코드 복붙이 아닌 '아키텍처 사고력'</h3>
+          <p>프레임워크 사용법만 알려주지 않습니다. 데이터 흐름, 디자인 패턴, 트래픽 병목 해결 능력까지 시스템 전반을 바라보는 깊이 있는 사고를 훈련합니다.</p>
+        </div>
+        <div class="about-card">
+          <div class="card-icon">⚡</div>
+          <h3>AI Pair Programming 실무 내재화</h3>
+          <p>현업 시니어 수준의 최신 AI 코딩 어시스턴트(Copilot, LLM Agent) 활용법을 정규 커리큘럼에 편성하여 생산성을 5배 이상 극대화합니다.</p>
+        </div>
+        <div class="about-card">
+          <div class="card-icon">🤝</div>
+          <h3>현업 시니어 1:1 코드 리뷰 & 피드백</h3>
+          <p>실제 프로덕션 레벨의 코드 컨벤션과 클린 코드 원칙을 매주 1:1 코드 리뷰를 통해 체득합니다. 타협 없는 피드백이 실력을 만듭니다.</p>
+        </div>
+        <div class="about-card">
+          <div class="card-icon">🚀</div>
+          <h3>대규모 트래픽 모의 장애 훈련</h3>
+          <p>토이 프로젝트가 아닌, 가상 10만 RPS 스트레스 테스트와 서버 장애 대응 시뮬레이션을 통해 포트폴리오의 격을 다르게 증명합니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Curriculum / Courses Section -->
+  <section class="curriculum-section" id="curriculum">
+    <div class="container">
+      <div class="section-badge">TRACKS & COURSES</div>
+      <h2 class="section-title">2026 집중 실무 부트캠프 트랙</h2>
+      <p class="section-subtitle">기초부터 실무 투입 직전까지 검증된 로드맵을 선택하세요.</p>
+
+      <!-- Track Tabs -->
+      <div class="track-tabs" id="trackTabs">
+        <button class="tab-btn active" data-tab="all">전체 트랙</button>
+        <button class="tab-btn" data-tab="fe">프론트엔드</button>
+        <button class="tab-btn" data-tab="be">백엔드</button>
+        <button class="tab-btn" data-tab="ai">AI / 데이터</button>
+        <button class="tab-btn" data-tab="devops">클라우드 DevOps</button>
+      </div>
+
+      <div class="courses-grid" id="coursesGrid">
+        <!-- Card 1 -->
+        <div class="course-card" data-category="fe">
+          <div class="course-header">
+            <span class="course-tag fe">프론트엔드</span>
+            <span class="course-duration">총 24주 (전일제)</span>
+          </div>
+          <h3 class="course-title">풀스택 인터랙티브 웹 & React/Next.js 전문가 과정</h3>
+          <p class="course-desc">모던 TypeScript, React 19, Next.js App Router, Three.js 3D 웹 및 상태 관리와 성능 최적화 풀스택 사이클 완벽 정복.</p>
+          <div class="course-skills">
+            <span>TypeScript</span>
+            <span>React 19</span>
+            <span>Next.js</span>
+            <span>TailwindCSS</span>
+            <span>Turborepo</span>
+          </div>
+          <div class="course-footer">
+            <div class="course-target">대상: 비전공자/입문자/취준생</div>
+            <button class="btn btn-sm btn-outline open-modal-btn" data-course="fe">상세 커리큘럼</button>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="course-card" data-category="be">
+          <div class="course-header">
+            <span class="course-tag be">백엔드</span>
+            <span class="course-duration">총 24주 (전일제)</span>
+          </div>
+          <h3 class="course-title">대용량 트래픽 엔지니어링 & MSA 백엔드 과정</h3>
+          <p class="course-desc">Spring Boot 3, Java 21, JPA/QueryDSL, Kafka 이벤트 기반 아키텍처 및 Redis 캐싱, 분산 트랜잭션 최적화 실전.</p>
+          <div class="course-skills">
+            <span>Java 21</span>
+            <span>Spring Boot</span>
+            <span>MySQL</span>
+            <span>Redis</span>
+            <span>Apache Kafka</span>
+          </div>
+          <div class="course-footer">
+            <div class="course-target">대상: 컴퓨터공학/전향 희망자</div>
+            <button class="btn btn-sm btn-outline open-modal-btn" data-course="be">상세 커리큘럼</button>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="course-card" data-category="ai">
+          <div class="course-header">
+            <span class="course-tag ai">AI / 머신러닝</span>
+            <span class="course-duration">총 20주 (전일제)</span>
+          </div>
+          <h3 class="course-title">LLM Agent 시스템 개발 및 생성형 AI 엔지니어링</h3>
+          <p class="course-desc">Python 심화, PyTorch 기반 모델 미세조정(Fine-tuning), RAG(검색 증강 생성) 파이프라인 및 LangChain, 벡터 DB 실전 구축.</p>
+          <div class="course-skills">
+            <span>Python</span>
+            <span>PyTorch</span>
+            <span>LangChain</span>
+            <span>RAG</span>
+            <span>Pinecone</span>
+          </div>
+          <div class="course-footer">
+            <div class="course-target">대상: AI 개발자 지망생</div>
+            <button class="btn btn-sm btn-outline open-modal-btn" data-course="ai">상세 커리큘럼</button>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="course-card" data-category="devops">
+          <div class="course-header">
+            <span class="course-tag devops">클라우드 / SRE</span>
+            <span class="course-duration">총 20주 (전일제)</span>
+          </div>
+          <h3 class="course-title">AWS & Kubernetes 기반 클라우드 네이티브 DevOps</h3>
+          <p class="course-desc">Docker 컨테이너, Kubernetes 클러스터 운영, Terraform 코드형 인프라(IaC), CI/CD 파이프라인 및 무중단 배포 설계.</p>
+          <div class="course-skills">
+            <span>AWS</span>
+            <span>Kubernetes</span>
+            <span>Terraform</span>
+            <span>GitHub Actions</span>
+            <span>Prometheus</span>
+          </div>
+          <div class="course-footer">
+            <div class="course-target">대상: 인프라/서버 엔지니어 지망생</div>
+            <button class="btn btn-sm btn-outline open-modal-btn" data-course="devops">상세 커리큘럼</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Simulator: Career Road Tester -->
+  <section class="simulator-section">
+    <div class="container">
+      <div class="simulator-card">
+        <div class="sim-header">
+          <span class="sim-badge">실시간 인터랙티브 플래너</span>
+          <h2>3초 만에 내게 맞는 개발자 트랙 & 예상 연봉 확인하기</h2>
+          <p>나의 현재 상태와 관심 분야를 선택하면 최적의 추천 코스를 즉시 계산해 드립니다.</p>
+        </div>
+        
+        <div class="sim-controls">
+          <div class="sim-group">
+            <label>현재 나의 상태</label>
+            <select id="simLevel" class="sim-select">
+              <option value="beginner">완전 비전공 비개발자 (코딩 처음)</option>
+              <option value="basic">기초 문법 독학 경험 있음 (HTML/JS/Python 등)</option>
+              <option value="cs">관련 학과 전공자 또는 국비 수료 경험</option>
+              <option value="career">현업 주니어 개발자 (이직 / 스택 업그레이드)</option>
+            </select>
+          </div>
+
+          <div class="sim-group">
+            <label>가장 흥미 있는 분야</label>
+            <select id="simField" class="sim-select">
+              <option value="fe">눈에 보이는 화면 및 화려한 사용자 경험 (UI/UX)</option>
+              <option value="be">서버, 안정적인 데이터베이스, 고성능 시스템 아키텍처</option>
+              <option value="ai">인공지능, 거대언어모델(LLM), 데이터 사이언스</option>
+              <option value="devops">클라우드 서버 인프라 자동화, 네트워크, 모니터링</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="sim-result" id="simResult">
+          <div class="res-badge">추천 분석 결과</div>
+          <div class="res-title" id="resTitle">프론트엔드 풀스택 인터랙티브 과정</div>
+          <p class="res-desc" id="resDesc">시각적 인터랙션 감각과 로직 구현을 겸비한 핵심 개발자로 가장 빠른 취업 전환이 가능한 트랙입니다.</p>
+          <div class="res-stats">
+            <div class="res-stat-item">
+              <span class="lbl">추천 학습 기간</span>
+              <span class="val" id="resDuration">24주 집중</span>
+            </div>
+            <div class="res-stat-item">
+              <span class="lbl">예상 첫 취업 연봉 범위</span>
+              <span class="val" id="resSalary">4,200 ~ 5,400 만원</span>
+            </div>
+            <div class="res-stat-item">
+              <span class="lbl">취업 연계 가능률</span>
+              <span class="val">98% 우수</span>
+            </div>
+          </div>
+          <a href="#consulting" class="btn btn-primary" style="margin-top: 1.5rem; display: inline-flex;">이 트랙으로 1:1 상담 예약하기</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Special Features / Comparison -->
+  <section class="features-section" id="features">
+    <div class="container">
+      <div class="section-badge">DIFFERENCE</div>
+      <h2 class="section-title">일반 코딩 학원 vs 넥스트코딩</h2>
+      <p class="section-subtitle">수료 후 현업에서 인정받는 비결은 디테일의 차이에 있습니다.</p>
+
+      <div class="table-responsive">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>구분</th>
+              <th>일반 국비 / 인강 코딩 부트캠프</th>
+              <th class="highlight-col">넥스트코딩 아카데미 (NextCoding)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>강사진 구성</td>
+              <td>강의 전담 강사 / 경력 1~3년차 튜터</td>
+              <td class="highlight-col"><strong class="point">20년차 테크 리드 & 유니콘 시니어 현직자</strong></td>
+            </tr>
+            <tr>
+              <td>프로젝트 방식</td>
+              <td>이미 널린 To-Do앱, 클론 코딩 포트폴리오</td>
+              <td class="highlight-col"><strong class="point">실제 배포 & 10,000+ 유저 유치 실전 프로덕트</strong></td>
+            </tr>
+            <tr>
+              <td>코드 리뷰</td>
+              <td>주 1회 단체 형식적 질의응답</td>
+              <td class="highlight-col"><strong class="point">주 3회 라인 바이 라인 1:1 심층 코드 리뷰</strong></td>
+            </tr>
+            <tr>
+              <td>AI 협업 훈련</td>
+              <td>단순 ChatGPT 프롬프트 질문 소개</td>
+              <td class="highlight-col"><strong class="point">Devin/Claude/Copilot Agent 통합 파이프라인 실습</strong></td>
+            </tr>
+            <tr>
+              <td>취업 사후 관리</td>
+              <td>이력서 양식 전달 후 수료 종료</td>
+              <td class="highlight-col"><strong class="point">취업 성공할 때까지 무제한 모의 면접 & 기업 매칭</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Student Reviews & Stories -->
+  <section class="reviews-section" id="reviews">
+    <div class="container">
+      <div class="section-badge">SUCCESS STORIES</div>
+      <h2 class="section-title">선배 수강생들의 리얼 취업 성공기</h2>
+      <p class="section-subtitle">넥스트코딩과 함께 증명해낸 수강생들의 목소리입니다.</p>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-content">"문과 출신 비전공자로 코딩의 벽을 느끼다가 넥스트코딩을 만났습니다. 단순 문법 암기가 아니라 자료구조와 웹 동작 원리를 시각화해서 가르쳐주신 덕분에 카카오 계열사 프론트엔드 엔지니어로 입사했습니다."</p>
+          <div class="reviewer-meta">
+            <div class="reviewer-avatar">K</div>
+            <div class="reviewer-info">
+              <span class="reviewer-name">김*훈 님 (11기 수료)</span>
+              <span class="reviewer-role">카카오 계열사 프론트엔드 개발자 입사</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-content">"다른 부트캠프 수료 후 서류 탈락만 반복했었습니다. 넥스트코딩 백엔드 트랙에서 대용량 트래픽 장애 대응과 MSA 아키텍처를 직접 구축해보는 실전 경험을 겪고 토스 최종 합격 목걸이를 걸었습니다."</p>
+          <div class="reviewer-meta">
+            <div class="reviewer-avatar">L</div>
+            <div class="reviewer-info">
+              <span class="reviewer-name">이*연 님 (12기 수료)</span>
+              <span class="reviewer-role">핀테크 유니콘 백엔드 코어 엔지니어 입사</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-content">"20년 경력의 디렉터님이 직접 라이브 코딩을 보여주시며 문제를 어떻게 디버깅하고 쪼개서 생각하는지 가르쳐주신 게 제 개발 인생의 가장 큰 터닝포인트였습니다. 최고의 결정이었습니다."</p>
+          <div class="reviewer-meta">
+            <div class="reviewer-avatar">P</div>
+            <div class="reviewer-info">
+              <span class="reviewer-name">박*민 님 (13기 수료)</span>
+              <span class="reviewer-role">AI 스타트업 MLOps 엔지니어 입사</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tuition & Benefits -->
+  <section class="tuition-section" id="tuition">
+    <div class="container">
+      <div class="section-badge">GOVERNMENT SUBSIDY</div>
+      <h2 class="section-title">수강료 전액 지원 및 특별 혜택</h2>
+      <p class="section-subtitle">내일배움카드 K-디지털 트레이닝(KDT)으로 본인 부담금 0원에 도전하세요.</p>
+
+      <div class="tuition-cards">
+        <div class="tuition-card premium">
+          <div class="tuition-tag">국비지원 전액 100% 무료</div>
+          <div class="tuition-price">
+            <span class="old-price">12,000,000원</span>
+            <span class="final-price">0<span class="unit">원</span></span>
+          </div>
+          <p class="tuition-sub">내일배움카드 발급 대상자 기준 (선발제한)</p>
+          <ul class="benefit-list">
+            <li>✔ 매월 최대 316,000원 훈련 장려금 추가 지급</li>
+            <li>✔ 최신 M3/M4 맥북 프로 개발 장비 전원 무상 대여</li>
+            <li>✔ 강남/판교 24시간 오픈 몰입형 오프라인 스터디 라운지</li>
+            <li>✔ 1:1 전담 취업 컨설턴트 밀착 배정 (이력서, 포폴, 모의면접)</li>
+            <li>✔ 파트너사 248개사 다이렉트 채용 추천 전형</li>
+            <li>✔ 수료 후 1년간 사후 기술 Q&A 및 네트워킹 데이 참여</li>
+          </ul>
+          <a href="#consulting" class="btn btn-lg btn-primary btn-block">국비 전액 지원 자격 조회하기</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-badge">FAQ</div>
+      <h2 class="section-title">자주 묻는 질문</h2>
+      <p class="section-subtitle">궁금한 점을 미리 확인해 보세요.</p>
+
+      <div class="faq-accordion" id="faqAccordion">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>비전공자나 문과생도 따라갈 수 있나요?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>네, 가능합니다! 넥스트코딩 수강생의 68%가 비전공자입니다. 정규 개강 4주 전부터 '프리온보딩(기초 프로그래밍 사고력)' 과정이 무료로 제공되며, 전담 멘토의 밀착 케어를 통해 낙오 없이 끝까지 완주할 수 있습니다.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>수업은 온라인인가요, 오프라인인가요?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>온/오프라인 하이브리드로 진행됩니다. 실시간 라이브 인터랙티브 강의와 디스코드 기반의 상시 질의응답이 이뤄지며, 강남 테헤란로에 위치한 24시간 오프라인 몰입형 라운지를 자유롭게 이용할 수 있습니다.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>선발 과정과 합격 기준은 어떻게 되나요?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>서류 지원서 접수 ➔ 온라인 기초 논리력 테스트 ➔ 1:1 심층 인터뷰로 진행됩니다. 코딩 실력보다는 6개월간 매일 10시간 이상 몰입할 수 있는 끈기와 학습 태도(성장 마인드셋)를 가장 중요하게 평가합니다.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>수료 후 취업 지원은 언제까지 진행되나요?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>취업에 성공할 때까지 무제한 지원됩니다. 수료 후에도 주 1회 모의 면접, 코딩 테스트 스터디, 협약 기업 다이렉트 추천 전형이 지속적으로 제공됩니다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Consultation / Contact Form Section -->
+  <section class="consulting-section" id="consulting">
+    <div class="container">
+      <div class="consulting-wrapper">
+        <div class="consulting-info">
+          <div class="section-badge">FAST TRACK</div>
+          <h2>당신의 가능성을<br><span class="highlight-text">현업 수준의 실력</span>으로 바꿉니다.</h2>
+          <p>어떤 트랙을 선택해야 할지 고민되시나요? 20년차 시니어 멘토가 당신의 현재 상황에 가장 알맞은 커리어 로드맵을 무료로 설계해 드립니다.</p>
+          
+          <div class="c-features">
+            <div class="c-feat-item">
+              <span class="c-feat-icon">🎯</span>
+              <div>
+                <strong>개인 맞춤형 커리어 분석</strong>
+                <p>전공, 나이, 목표 기업에 맞춘 1:1 전략 수립</p>
+              </div>
+            </div>
+            <div class="c-feat-item">
+              <span class="c-feat-icon">📑</span>
+              <div>
+                <strong>2026 부트캠프 합격 포트폴리오 샘플 제공</strong>
+                <p>실제 네카라쿠배 합격생 포트폴리오 PDF 열람</p>
+              </div>
+            </div>
+            <div class="c-feat-item">
+              <span class="c-feat-icon">💳</span>
+              <div>
+                <strong>국비지원 100% 대상 여부 실시간 조회</strong>
+                <p>내일배움카드 잔액 및 국비 KDT 자격 가이드</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="consulting-form-card">
+          <form id="applyForm" onsubmit="return false;">
+            <h3>무료 1:1 커리어 상담 & 자료 신청</h3>
+            <p class="form-desc">선착순 30명 한정 얼리버드 혜택이 적용됩니다.</p>
+
+            <div class="form-group">
+              <label for="userName">이름 *</label>
+              <input type="text" id="userName" placeholder="예: 홍길동" required>
+            </div>
+
+            <div class="form-group">
+              <label for="userPhone">연락처 *</label>
+              <input type="tel" id="userPhone" placeholder="예: 010-1234-5678" inputmode="numeric" maxlength="13" required>
+            </div>
+
+            <div class="form-group">
+              <label for="userEmail">이메일 *</label>
+              <input type="email" id="userEmail" placeholder="예: nextcoding@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="userTrack">관심 부트캠프 트랙 *</label>
+              <select id="userTrack" required>
+                <option value="">선택해주세요</option>
+                <option value="fe">프론트엔드 React/Next.js 전문가 과정</option>
+                <option value="be">대용량 백엔드 Java/Spring MSA 과정</option>
+                <option value="ai">LLM Agent & AI 엔지니어링 과정</option>
+                <option value="devops">클라우드 네이티브 DevOps & K8s 과정</option>
+                <option value="undecided">아직 결정을 못함 (상담 후 결정)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="userNote">추가 질문 또는 상담 희망 사항</label>
+              <textarea id="userNote" rows="3" placeholder="비전공자 시작 가능 여부, 국비지원 신청 방법 등"></textarea>
+            </div>
+
+            <div class="form-agree">
+              <label>
+                <input type="checkbox" id="agreePrivacy" required checked>
+                개인정보 수집 및 상담 안내 목적 이용에 동의합니다.
+              </label>
+            </div>
+
+            <button type="submit" id="submitBtn" class="btn btn-lg btn-primary btn-block">
+              지금 무료 1:1 상담 신청하기
+            </button>
+          </form>
+          
+          <div class="form-success" id="formSuccess">
+            <div class="success-icon">🎉</div>
+            <h3>상담 신청이 완료되었습니다!</h3>
+            <p>남겨주신 연락처로 24시간 이내에 넥스트코딩 전문 커리어 어드바이저가 친절하게 연락드리겠습니다.</p>
+            <button class="btn btn-sm btn-outline" id="resetFormBtn">다른 문의 작성하기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal for Course Details -->
+  <div class="modal-overlay" id="courseModal">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <div id="modalBody">
+        <!-- Content injected via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <div class="logo-mark">
+          <span class="logo-gradient">NC</span>
+        </div>
+        <h3>NEXTCODING ACADEMY</h3>
+        <p>대한민국 No.1 실무 주도형 IT 인재 양성 아카데미.<br>이론에 머물지 않고 현업에서 즉각 기여하는 진짜 엔지니어를 육성합니다.</p>
+        <p class="copyright">© 2026 NextCoding Academy Corp. All rights reserved.</p>
+      </div>
+
+      <div class="footer-links">
+        <div class="link-col">
+          <h4>트랙 안내</h4>
+          <a href="#curriculum">프론트엔드 엔지니어링</a>
+          <a href="#curriculum">백엔드 분산 아키텍처</a>
+          <a href="#curriculum">LLM AI 엔지니어링</a>
+          <a href="#curriculum">DevOps & Cloud SRE</a>
+        </div>
+        <div class="link-col">
+          <h4>학습 센터</h4>
+          <a href="#about">교육 철학</a>
+          <a href="#reviews">수료생 포트폴리오</a>
+          <a href="#tuition">내일배움카드 가이드</a>
+          <a href="#faq">자주 묻는 질문</a>
+        </div>
+        <div class="link-col">
+          <h4>고객지원</h4>
+          <p>고객센터: 1544-2026</p>
+          <p>운영시간: 평일 09:00 ~ 21:00</p>
+          <p>이메일: support@nextcoding.io</p>
+          <p>캠퍼스: 서울시 강남구 테헤란로 152 넥스트타워 4-7층</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
